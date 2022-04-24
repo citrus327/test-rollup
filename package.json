@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sb": "node scripts/simple-build.js",
-    "sbwp": "node scripts/simple-build-with-plugin.js"
+    "sbwp": "node scripts/simple-build-with-plugin.js",
+    "db": "node scripts/dynamic-build.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,11 @@
   },
   "homepage": "https://github.com/phshy0607/test-rollup#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "rollup": "^2.70.2",
     "rollup-plugin-terser": "^7.0.2"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }
