@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "simple-build": "node scripts/simple-build.js"
+    "sb": "node scripts/simple-build.js",
+    "sbwp": "node scripts/simple-build-with-plugin.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/phshy0607/test-rollup#readme",
   "devDependencies": {
-    "rollup": "^2.70.2"
+    "rollup": "^2.70.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
