@@ -17,12 +17,16 @@ const outputOption = [
 ];
 
 rollup({
-  input: "./src/index.js",
-}).then(async (bundle) => {
-  await Promise.all(
-    outputOption.map(async (o) => {
-      return await bundle.write(o);
-    })
-  );
-  await bundle.close();
-});
+  input: `./src/${targetFolder}/index.js`,
+})
+  .then(async (bundle) => {
+    await Promise.all(
+      outputOption.map(async (o) => {
+        return await bundle.write(o);
+      })
+    );
+    await bundle.close();
+  })
+  .then(() => {
+    console.log("Done!");
+  });

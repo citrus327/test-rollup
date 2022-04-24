@@ -19,13 +19,17 @@ const outputOption = [
 ];
 
 rollup({
-  input: "./src/index.js",
+  input: `./src/${targetFolder}/index.js`,
   plugins: [terser()],
-}).then(async (bundle) => {
-  await Promise.all(
-    outputOption.map(async (o) => {
-      return await bundle.write(o);
-    })
-  );
-  await bundle.close();
-});
+})
+  .then(async (bundle) => {
+    await Promise.all(
+      outputOption.map(async (o) => {
+        return await bundle.write(o);
+      })
+    );
+    await bundle.close();
+  })
+  .then(() => {
+    console.log("Done!");
+  });
