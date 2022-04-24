@@ -1,0 +1,22 @@
+{
+  "name": "test-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "simple-build": "node scripts/simple-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phshy0607/test-rollup.git"
+  },
+  "author": "hanyue.ph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phshy0607/test-rollup/issues"
+  },
+  "homepage": "https://github.com/phshy0607/test-rollup#readme",
+  "devDependencies": {
+    "rollup": "^2.70.2"
+  }
+}
