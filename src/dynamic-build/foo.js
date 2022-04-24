@@ -1,1 +1,3 @@
-export default "123";
+export default {
+  msg: "123",
+};
