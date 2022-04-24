@@ -1,4 +1,4 @@
 # Rollup Examples
 
-a personal experiments of rollup for bundling
+personal experiments of rollup for bundling
 
