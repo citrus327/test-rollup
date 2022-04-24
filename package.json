@@ -7,7 +7,8 @@
     "sb": "node scripts/simple-build.js",
     "sbwp": "node scripts/simple-build-with-plugin.js",
     "db": "node scripts/dynamic-build.js",
-    "nr": "node scripts/node-resolve.js"
+    "nr": "node scripts/node-resolve.js",
+    "svm": "node scripts/simple-virtual-module.js"
   },
   "repository": {
     "type": "git",
