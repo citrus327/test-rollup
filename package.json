@@ -9,7 +9,8 @@
     "db": "node scripts/dynamic-build.js",
     "nr": "node scripts/node-resolve.js",
     "svm": "node scripts/simple-virtual-module.js",
-    "bt": "node scripts/babel-transpile.js"
+    "bt": "node scripts/babel-transpile.js",
+    "pc": "node scripts/plugin-context.js"
   },
   "repository": {
     "type": "git",
@@ -29,12 +30,15 @@
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.2.1",
+    "@rollup/plugin-typescript": "^8.3.2",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "rollup": "^2.70.2",
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "core-js": "^3.22.2"
+    "core-js": "^3.22.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
   }
 }
